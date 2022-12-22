@@ -1,0 +1,11 @@
+[Unit]
+Description=My test service
+After=multi-user.service
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/focal.sh
+
+[Install]
+WantedBy=multi-user.target
